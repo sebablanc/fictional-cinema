@@ -16,7 +16,7 @@ This app use Ionic 7 -with capacitor- and Angular 15.
 ### For try it as a PWA or in a browser with developer tools.
 - You just have to enter the command "ionic s" and wait that compile.
 
-### For try it as a Android App.
+### For try it as an Android App.
 - In the terminal, first enter the command "npx cap sync".
 - Then enter the command "ionic capacitor run android".
 - Wait until Android Studio opens automatically.
@@ -24,7 +24,7 @@ This app use Ionic 7 -with capacitor- and Angular 15.
 - Clic on the play button.
 - Wait and <b>¡enjoy!</b>
 
-### For try it as a iOS App. (for this you need a Mac)
+### For try it as an iOS App. (for this you need a Mac)
 - In the terminal, first enter the command "npx cap sync".
 - Then enter the command "ionic capacitor run ios".
 - Wait until XCode opens automatically.
