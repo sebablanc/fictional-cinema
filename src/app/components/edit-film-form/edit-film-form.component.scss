@@ -1,0 +1,17 @@
+#edit-film-form-inputs{
+    max-width: 500px;
+    margin: 20px auto 30px;
+
+    img{
+        display: flex;
+        margin: 0 auto 10px;
+    }
+}
+
+::ng-deep app-button{
+    display: flex;
+    justify-content: center;
+    ::ng-deep button{
+        max-width: 500px;
+    }
+}

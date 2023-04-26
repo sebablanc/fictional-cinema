@@ -1,0 +1,12 @@
+<ion-content [fullscreen]="true" color="dark" class="ion-padding">
+  <section id="login-form-section">
+    <img src="assets/popcorn-cinema.svg" />
+    <app-login-form (data)="mostrarResultado($event)"></app-login-form>
+    <div id="login-form-link">
+      <app-link [label]="'Create account'" (linkClick)="createAccount()"></app-link>
+    </div>
+  </section>
+  <section id="forgot-password-section">
+    <app-forgot-password-modal></app-forgot-password-modal>
+  </section>
+</ion-content>

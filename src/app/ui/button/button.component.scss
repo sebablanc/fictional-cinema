@@ -1,0 +1,12 @@
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    background-color: #2c9f88;
+    color: white;
+}
+
+button[disabled]{
+    background-color: gray;
+}

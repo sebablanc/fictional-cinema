@@ -1,0 +1,18 @@
+#register-back-arrow{
+    width: 25px;
+    height: 25px;
+}
+
+#register-form-section{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#register-form-section img {
+    margin-bottom: 40px;
+    width: 158px;
+    filter: invert(1);
+}

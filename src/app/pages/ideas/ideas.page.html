@@ -1,0 +1,15 @@
+<app-layout-with-header [title]="'Ideas to watch'">
+  <ion-menu-button start-buttons></ion-menu-button>
+
+  <ion-content main-content [fullscreen]="true">
+    <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+      <ion-refresher-content>
+      </ion-refresher-content>
+    </ion-refresher>
+    <ion-list>
+      <app-film-card *ngFor="let film of filmsTop5" [film]="film" (seeDetail)="goToDetail($event)"
+        (edit)="goToEdit($event)"></app-film-card>
+    </ion-list>
+    <p>¿Don't like these ideas? Pull to get more.</p>
+  </ion-content>
+</app-layout-with-header>

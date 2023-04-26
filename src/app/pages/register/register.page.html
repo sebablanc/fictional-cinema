@@ -1,0 +1,7 @@
+<ion-content [fullscreen]="true" color="dark" class="ion-padding">
+  <ion-icon id="register-back-arrow" name="arrow-back-outline" (click)="backPage()"></ion-icon>
+  <section id="register-form-section">
+    <img src="assets/popcorn-cinema.svg" />
+    <app-login-form [useAsRegister]="true" (data)="registerUser($event)"></app-login-form>
+  </section>
+</ion-content>

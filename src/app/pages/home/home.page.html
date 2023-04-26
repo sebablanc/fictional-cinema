@@ -1,0 +1,16 @@
+<app-layout-with-header [title]="'Movies'">
+  <ion-menu-button start-buttons></ion-menu-button>
+
+  <nav end-buttons>
+    <app-search-button (data)="filterFilms($event)"></app-search-button>
+  </nav>
+
+  <ion-content main-content [fullscreen]="true">
+    <ion-list>
+      <app-film-card *ngFor="let film of filmsFiltered" [film]="film" (seeDetail)="goToDetail($event)"
+        (edit)="goToEdit($event)"></app-film-card>
+    </ion-list>
+    <app-fab-button [horizontal]="'center'" [vertical]="'bottom'" [icon]="'add'"
+      (clicked)="goToEdit(0)"></app-fab-button>
+  </ion-content>
+</app-layout-with-header>

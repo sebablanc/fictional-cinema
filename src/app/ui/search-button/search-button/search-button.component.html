@@ -1,0 +1,8 @@
+<ion-button id="search-trigger">
+  <ion-icon name="search-outline"></ion-icon>
+</ion-button>
+<ion-popover trigger="search-trigger" triggerAction="click">
+  <ng-template>
+    <ion-searchbar clear-icon="trash-bin" (ionInput)="changeHandler($event)" [value]="valueInserted"></ion-searchbar>
+  </ng-template>
+</ion-popover>

@@ -1,0 +1,4 @@
+<div id="rate-container">
+  <p>Rate</p>
+  <ion-icon *ngFor="let i of stars;let idx = index" [ngClass]="{'golden-rate': i === 'star'}" [name]="i" (click)="sendDataRate.emit(idx)" ></ion-icon>
+</div>

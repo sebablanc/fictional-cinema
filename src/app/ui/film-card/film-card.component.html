@@ -1,0 +1,13 @@
+<ion-item-sliding *ngIf="film.id>0" id="film-card-container">
+  <ion-item>
+    <img id="film-card-img" [src]="film.poster" alt="film poster" (click)="detailFilm.emit(film.id)" />
+    <section id="film-card-detail">
+      <p id="film-card-title" (click)="detailFilm.emit(film.id)">{{ film.title }}</p>
+      <p id="film-card-plot" (click)="detailFilm.emit(film.id)">{{ film.plot }}</p>
+      <app-rate id="film-card-rate" [rate]="film.rate" (data)="rateFilm($event)"></app-rate>
+    </section>
+  </ion-item>
+  <ion-item-options>
+    <ion-item-option color="secondary" (click)="editFilm.emit(film.id)">Edit</ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>

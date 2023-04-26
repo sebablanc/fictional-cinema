@@ -1,0 +1,8 @@
+<div id="edit-film-form-inputs">
+  <img *ngIf="editForm && editForm.value && editForm.value.poster" [src]="editForm.value.poster" alt="poster film" />
+  <app-input [placeholder]="'Title'" [inputFormControlName]="'title'" [formGroup]="editForm"></app-input>
+  <app-input [type]="'date'" [placeholder]="'Released'" [inputFormControlName]="'released'" [formGroup]="editForm"></app-input>
+  <app-input [placeholder]="'Plot'" [inputFormControlName]="'plot'" [formGroup]="editForm"></app-input>
+  <app-input [placeholder]="'Poster'" [inputFormControlName]="'poster'" [formGroup]="editForm"></app-input>
+</div>
+<app-button [label]="(filmToEdit.id > 0) ? 'Edit Film' : 'Save Film'" [disabled]="!editForm.valid" (click)="sendFormData.emit(editForm.value);"></app-button>

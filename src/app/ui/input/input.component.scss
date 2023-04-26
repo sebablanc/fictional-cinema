@@ -1,0 +1,15 @@
+@import '../ui.scss';
+
+input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    text-align: center;
+}

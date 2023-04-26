@@ -1,0 +1,41 @@
+ion-content{
+    --padding-start: 20px;
+    --padding-end: 20px;
+
+    h1{
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+    }
+
+    img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        max-width: 500px;
+    }
+
+    div{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        app-rate{
+            float: left;
+            margin-bottom: 20px;
+        }
+    
+        #film-date-released{
+            float: right;
+        }
+    }
+
+    #film-detail-plot{
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        text-align: center  ;
+    }
+}

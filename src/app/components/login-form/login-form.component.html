@@ -1,0 +1,5 @@
+<div id="login-form-inputs">
+  <app-input [type]="'text'" [placeholder]="'Username'" [inputFormControlName]="'username'" [formGroup]="loginForm"></app-input>
+  <app-input [type]="'password'" [placeholder]="'Password'" [inputFormControlName]="'password'" [formGroup]="loginForm"></app-input>
+</div>
+<app-button [label]="isRegister ? 'Sign In' : 'Login'" [disabled]="!loginForm.valid" (click)="sendFormData.emit(loginForm.value);"></app-button>

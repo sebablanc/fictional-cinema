@@ -1,0 +1,18 @@
+#login-form-section{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+        margin-bottom: 40px;
+        width: 158px;
+        filter: invert(1);
+    }
+}
+
+#forgot-password-section{
+    height: 5vh;
+    text-align: center;
+    padding-bottom: 10px;
+}

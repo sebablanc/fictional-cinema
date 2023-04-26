@@ -1,0 +1,18 @@
+<app-layout-with-header>
+  <ion-icon start-buttons name="chevron-back-outline" (click)="goBack()"></ion-icon>
+
+  <nav end-buttons>
+    <ion-icon name="trash-outline" (click)="showAlertDelete()"></ion-icon>
+    <ion-icon name="pencil-outline" (click)="editFilm()"></ion-icon>
+  </nav>
+
+  <ion-content main-content [fullscreen]="true">
+    <h1>{{film.title}}</h1>
+    <img [src]="film.poster" alt="film poster">
+    <div>
+      <app-rate [rate]="film.rate" (data)="rateFilm($event)"></app-rate>
+      <p id="film-date-released">{{ film.released | dateFormat:'/' }}</p>
+    </div>
+    <p id="film-detail-plot">{{ film.plot }}</p>
+  </ion-content>
+</app-layout-with-header>

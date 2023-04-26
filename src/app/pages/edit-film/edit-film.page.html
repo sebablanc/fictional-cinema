@@ -1,0 +1,7 @@
+<app-layout-with-header [title]="film ? 'Editing film' : 'New film'">
+  <ion-icon start-buttons name="chevron-back-outline" (click)="goBack()"></ion-icon>
+
+  <ion-content main-content [fullscreen]="true">
+    <app-edit-film-form [film]="film" (data)="verifyHowToProceed($event)"></app-edit-film-form>
+  </ion-content>
+</app-layout-with-header>
